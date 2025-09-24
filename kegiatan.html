@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kegiatan MapFloFa</title>
+</head>
+<body>
+  <h2>🏕️ Jenis Kegiatan</h2>
+  <ul>
+    <li><a href="kegiatan/edukasi.html">Edukasi</a></li>
+    <li><a href="kegiatan/eksplorasi.html">Eksplorasi</a></li>
+  </ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload Dokumentasi Kegiatan</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body { font-family: sans-serif; background: #fefcf6; padding: 30px; color: #333; }
+    h1 { color: #805c2e; }
+    form { background: #fff7e5; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; }
+    label { font-weight: bold; margin-top: 10px; display: block; }
+    input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
+    button { background: #805c2e; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #5e411f; }
+  </style>
+</head>
+<body>
+
+  <h1>📤 Upload Dokumentasi Kegiatan</h1>
+  <form onsubmit="event.preventDefault(); alert('Dokumentasi berhasil dikirim (simulasi)!');">
+
+    <label>📌 Judul Kegiatan</label>
+    <input type="text" placeholder="Contoh: Ekspedisi Bukit Soeharto Maret 2025" required />
+
+    <label>📅 Tanggal Kegiatan</label>
+    <input type="date" required />
+
+    <label>📍 Lokasi</label>
+    <input type="text" placeholder="Contoh: Bukit Soeharto, Kutai Kartanegara" required />
+
+    <label>📷 Upload Galeri Foto</label>
+    <input type="file" multiple accept="image/*" />
+
+    <label>🗒️ Catatan Kontributor</label>
+    <textarea rows="5" placeholder="Contoh: Observasi Shorea leprosula dan Herpestes aktif malam hari."></textarea>
+
+    <button type="submit">Kirim Dokumentasi</button>
+  </form>
+
+</body>
+</html>
